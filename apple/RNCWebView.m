@@ -101,7 +101,7 @@ RCTAutoInsetsProtocol>
   BOOL _savedKeyboardDisplayRequiresUserAction;
   
   // Workaround for StatusBar appearance bug for iOS 12
-  // https://github.com/react-native-webview/react-native-webview/issues/62
+  // https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/issues/62
   BOOL _isFullScreenVideoOpen;
 #if !TARGET_OS_OSX
   UIStatusBarStyle _savedStatusBarStyle;
@@ -177,7 +177,7 @@ RCTAutoInsetsProtocol>
      name:UIKeyboardWillShowNotification object:nil];
     
     // Workaround for StatusBar appearance bug for iOS 12
-    // https://github.com/react-native-webview/react-native-webview/issues/62
+    // https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/issues/62
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(showFullScreenVideoStatusBars)
                                                  name:UIWindowDidBecomeVisibleNotification

@@ -1,16 +1,13 @@
 {
-  "name": "react-native-webview",
-  "description": "React Native WebView component for iOS, Android, macOS, and Windows",
+  "name": "invirtu-react-native-widgets",
+  "description": "Use BingeWaves widget on React Native",
   "main": "index.js",
   "main-internal": "src/index.ts",
   "typings": "index.d.ts",
-  "author": "Jamon Holmgren <jamon@infinite.red>",
-  "contributors": [
-    "Thibault Malbranche <malbranche.thibault@gmail.com>"
-  ],
+  "author": "Devin Dixon <ddixon@bingewave.com>",
   "license": "MIT",
-  "version": "11.23.1",
-  "homepage": "https://github.com/react-native-webview/react-native-webview#readme",
+  "version": "0.0.2",
+  "homepage": "https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets#readme",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios --project-path example/ios",
@@ -72,7 +69,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-webview/react-native-webview.git"
+    "url": "https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets.git"
   },
   "files": [
     "android",

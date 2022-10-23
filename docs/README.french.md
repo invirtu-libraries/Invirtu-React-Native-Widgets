@@ -1,7 +1,7 @@
 
 # React Native WebView - Une WebView moderne et multiplateforme pour React Native
 
-[![star this repo](http://githubbadges.com/star.svg?user=react-native-webview&repo=react-native-webview&style=flat)](https://github.com/react-native-webview/react-native-webview)
+[![star this repo](http://githubbadges.com/star.svg?user=react-native-webview&repo=react-native-webview&style=flat)](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors)
 [![Known Vulnerabilities](https://snyk.io/test/github/react-native-webview/react-native-webview/badge.svg?style=flat-square)](https://snyk.io/test/github/react-native-webview/react-native-webview)
@@ -43,20 +43,20 @@ Ce projet suit la [gestion sémantique de version](https://semver.org/).  Nous n
 
 Current Version: ![version](https://img.shields.io/npm/v/react-native-webview.svg)
 
-- [11.0.0](https://github.com/react-native-webview/react-native-webview/releases/tag/v11.0.0) - Android setSupportMultipleWindows.
-- [10.0.0](https://github.com/react-native-webview/react-native-webview/releases/tag/v10.0.0) - Le plugin Android Gradle n'est obligatoire qu'en ouvrant le projet en mode **stand-alone**
-- [9.0.0](https://github.com/react-native-webview/react-native-webview/releases/tag/v9.0.0) - Les mises à jour des props via  injectedJavaScript ne sont plus immuables
-- [8.0.0](https://github.com/react-native-webview/react-native-webview/releases/tag/v8.0.0) - Désormais onNavigationStateChange se déclenche au changement du hash de l'url
-- [7.0.1](https://github.com/react-native-webview/react-native-webview/releases/tag/v7.0.1) - Suppression de UIWebView
-- [6.0.**2**](https://github.com/react-native-webview/react-native-webview/releases/tag/v6.0.2) - Mise à jour d'AndroidX. Soyez attentif à l'activer dans vos projet via `android/gradle.properties`. Voir [Getting Started Guide](docs/Getting-Started.md).
-- [5.0.**1**](https://github.com/react-native-webview/react-native-webview/releases/tag/v5.0.0) - Remaniement de l'ancienne implémentation de postMessage pour communiquer de la webview à react native.
-- [4.0.0](https://github.com/react-native-webview/react-native-webview/releases/tag/v4.0.0) - Ajout d'un cache (activé par défaut).
-- [3.0.0](https://github.com/react-native-webview/react-native-webview/releases/tag/v3.0.0) - WKWebview : Ajout d'un pool de processus partagé pour que les cookies et localStorage soient partagés entre les webviews dans iOS (activé par défaut).
-- [2.0.0](https://github.com/react-native-webview/react-native-webview/releases/tag/v2.0.0) - Première version, il s'agit d'une réplique du composant webview de base.
+- [11.0.0](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v11.0.0) - Android setSupportMultipleWindows.
+- [10.0.0](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v10.0.0) - Le plugin Android Gradle n'est obligatoire qu'en ouvrant le projet en mode **stand-alone**
+- [9.0.0](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v9.0.0) - Les mises à jour des props via  injectedJavaScript ne sont plus immuables
+- [8.0.0](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v8.0.0) - Désormais onNavigationStateChange se déclenche au changement du hash de l'url
+- [7.0.1](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v7.0.1) - Suppression de UIWebView
+- [6.0.**2**](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v6.0.2) - Mise à jour d'AndroidX. Soyez attentif à l'activer dans vos projet via `android/gradle.properties`. Voir [Getting Started Guide](docs/Getting-Started.md).
+- [5.0.**1**](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v5.0.0) - Remaniement de l'ancienne implémentation de postMessage pour communiquer de la webview à react native.
+- [4.0.0](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v4.0.0) - Ajout d'un cache (activé par défaut).
+- [3.0.0](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v3.0.0) - WKWebview : Ajout d'un pool de processus partagé pour que les cookies et localStorage soient partagés entre les webviews dans iOS (activé par défaut).
+- [2.0.0](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/releases/tag/v2.0.0) - Première version, il s'agit d'une réplique du composant webview de base.
 
 **A venir:**
 
-- Suppression de this.webView.postMessage() (jamais documenté et moins dynamique que injectJavascript) -> [comment migrer](https://github.com/react-native-webview/react-native-webview/issues/809)
+- Suppression de this.webView.postMessage() (jamais documenté et moins dynamique que injectJavascript) -> [comment migrer](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/issues/809)
 - Réécriture du code Kotlin
 - Peut-être réécrutire du code Swift
 
@@ -81,11 +81,11 @@ Pour plus de détails, lisez la [Référence API](./docs/Reference.md) et le [Gu
 ## Problèmes communs
 
 - Si l'erreur `Invariant Violation: Native component for "RNCWebView does not exist"` intervient, cela signifie probablement que vous avez oublié d'executer `react-native link` ou qu'une erreur est intervenue durant le processus de liaison.
-- Si vous rencontrer une erreur de build durant l'execution de la tâche `:app:mergeDexRelease`, vous devez activer le support du multidex dans `android/app/build.gradle` comme discuté [ici](https://github.com/react-native-webview/react-native-webview/issues/1344#issuecomment-650544648)
+- Si vous rencontrer une erreur de build durant l'execution de la tâche `:app:mergeDexRelease`, vous devez activer le support du multidex dans `android/app/build.gradle` comme discuté [ici](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/issues/1344#issuecomment-650544648)
 
 ## Contribuer
 
-Voir [Contributing.md](https://github.com/react-native-webview/react-native-webview/blob/master/docs/Contributing.md)
+Voir [Contributing.md](https://github.com/invirtu-libraries/Invirtu-React-Native-Widgets/blob/master/docs/Contributing.md)
 
 ## Contributeurs
 
